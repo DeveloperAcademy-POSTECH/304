@@ -67,6 +67,7 @@ struct BounceAnimationSmallView: View {
     @State var offsetYForBounce: CGFloat = -50
     @State var opacity: CGFloat = 0
     @State var baseTime: Double
+    @State var isgo = true
     
     init(text: String, startTime: Double){
         self.characters = Array(text)
