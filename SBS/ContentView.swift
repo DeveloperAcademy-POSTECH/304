@@ -12,9 +12,27 @@ struct ContentView: View {
     @State var headTitle = "어서오십시요 304 입니다."
     @State var subTitle = "파인다이닝 레스토랑 오신걸 환영함돠"
     @State var audioPlayer: AVAudioPlayer?
+    @State var isMuted = false
     
     var body: some View {
         ZStack {
+            VStack {
+                Spacer()
+                HStack {
+                    Spacer()
+                    Image(systemName: isMuted ? "speaker.slash" : "speaker.wave.3")
+                        .onTapGesture {
+                            if isMuted {
+                                audioPlayer?.volume = 1
+                            } else {
+                                audioPlayer?.volume = 0
+                            }
+                            isMuted.toggle()
+                        }
+                }
+            }
+            .ignoresSafeArea()
+            
             CelebrationEffect()
             
             VStack {
