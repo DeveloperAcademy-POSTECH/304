@@ -81,12 +81,8 @@ struct CelebrationEffect: View {
                     }
                 }
             } else {
-                // Fallback on earlier versions
+                
             }
-            
-            
-            
-            
             Text("")
                 .font(.caption)
             .textCase(.uppercase)
