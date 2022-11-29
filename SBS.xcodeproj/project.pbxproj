@@ -11,6 +11,9 @@
 		5FCCD42B2936697A00CD8AF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCCD42A2936697A00CD8AF5 /* ContentView.swift */; };
 		5FCCD42D2936697B00CD8AF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FCCD42C2936697B00CD8AF5 /* Assets.xcassets */; };
 		5FCCD4302936697B00CD8AF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FCCD42F2936697B00CD8AF5 /* Preview Assets.xcassets */; };
+		7A2B423229366B9600D49576 /* Toby.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B423129366B9600D49576 /* Toby.swift */; };
+		7A2B423429366B9E00D49576 /* Theo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B423329366B9E00D49576 /* Theo.swift */; };
+		7A2B423629366BA400D49576 /* Hardy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B423529366BA400D49576 /* Hardy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		5FCCD42A2936697A00CD8AF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5FCCD42C2936697B00CD8AF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FCCD42F2936697B00CD8AF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7A2B423129366B9600D49576 /* Toby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toby.swift; sourceTree = "<group>"; };
+		7A2B423329366B9E00D49576 /* Theo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theo.swift; sourceTree = "<group>"; };
+		7A2B423529366BA400D49576 /* Hardy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hardy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,7 @@
 		7A2B422E29366AE900D49576 /* 현상 */ = {
 			isa = PBXGroup;
 			children = (
+				7A2B423329366B9E00D49576 /* Theo.swift */,
 			);
 			name = "현상";
 			path = "현상";
@@ -81,6 +88,7 @@
 		7A2B422F29366AF400D49576 /* 인호 */ = {
 			isa = PBXGroup;
 			children = (
+				7A2B423129366B9600D49576 /* Toby.swift */,
 			);
 			name = "인호";
 			path = "인호";
@@ -89,6 +97,7 @@
 		7A2B423029366AFB00D49576 /* 연호 */ = {
 			isa = PBXGroup;
 			children = (
+				7A2B423529366BA400D49576 /* Hardy.swift */,
 			);
 			name = "연호";
 			path = "연호";
@@ -165,6 +174,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FCCD42B2936697A00CD8AF5 /* ContentView.swift in Sources */,
+				7A2B423429366B9E00D49576 /* Theo.swift in Sources */,
+				7A2B423229366B9600D49576 /* Toby.swift in Sources */,
+				7A2B423629366BA400D49576 /* Hardy.swift in Sources */,
 				5FCCD4292936697A00CD8AF5 /* SBSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
