@@ -18,7 +18,8 @@
 		7A2B423429366B9E00D49576 /* Theo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B423329366B9E00D49576 /* Theo.swift */; };
 		7A2B423629366BA400D49576 /* Hardy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B423529366BA400D49576 /* Hardy.swift */; };
 		7A2B423829366D8500D49576 /* WayToCome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B423729366D8500D49576 /* WayToCome.swift */; };
-		7A2B423A2936759700D49576 /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B42392936759700D49576 /* Reservation.swift */; };
+		7A2B423D29367DDF00D49576 /* ChosunGs.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 7A2B423C29367DDF00D49576 /* ChosunGs.TTF */; };
+		7A2B424029367E7000D49576 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B423F29367E7000D49576 /* View+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,9 @@
 		7A2B423529366BA400D49576 /* Hardy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hardy.swift; sourceTree = "<group>"; };
 		7A2B423729366D8500D49576 /* WayToCome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayToCome.swift; sourceTree = "<group>"; };
 		7A2B42392936759700D49576 /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
+		7A2B423C29367DDF00D49576 /* ChosunGs.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = ChosunGs.TTF; sourceTree = "<group>"; };
+		7A2B423E29367DFA00D49576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7A2B423F29367E7000D49576 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,12 +71,14 @@
 		5FCCD4272936697A00CD8AF5 /* SBS */ = {
 			isa = PBXGroup;
 			children = (
+				7A2B423E29367DFA00D49576 /* Info.plist */,
 				5FCCD4282936697A00CD8AF5 /* SBSApp.swift */,
 				5FCCD42A2936697A00CD8AF5 /* ContentView.swift */,
 				5FCCD43E29391CB200CD8AF5 /* Bounce.swift */,
 				5FCCD43C29391C9900CD8AF5 /* CelebrationEffect.swift */,
 				5FCCD42C2936697B00CD8AF5 /* Assets.xcassets */,
 				5FCCD44029391CD100CD8AF5 /* song.mp3 */,
+				7A2B423B29367DC700D49576 /* Font */,
 				7A2B422F29366AF400D49576 /* 인호 */,
 				7A2B422E29366AE900D49576 /* 현상 */,
 				7A2B423029366AFB00D49576 /* 연호 */,
@@ -95,6 +101,7 @@
 				7A2B423329366B9E00D49576 /* Theo.swift */,
 				7A2B423729366D8500D49576 /* WayToCome.swift */,
 				7A2B42392936759700D49576 /* Reservation.swift */,
+				7A2B423F29367E7000D49576 /* View+.swift */,
 			);
 			name = "현상";
 			path = "현상";
@@ -116,6 +123,14 @@
 			);
 			name = "연호";
 			path = "연호";
+			sourceTree = "<group>";
+		};
+		7A2B423B29367DC700D49576 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				7A2B423C29367DDF00D49576 /* ChosunGs.TTF */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +193,7 @@
 			files = (
 				5FCCD4302936697B00CD8AF5 /* Preview Assets.xcassets in Resources */,
 				5FCCD42D2936697B00CD8AF5 /* Assets.xcassets in Resources */,
+				7A2B423D29367DDF00D49576 /* ChosunGs.TTF in Resources */,
 				5FCCD44129391CD100CD8AF5 /* song.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +209,7 @@
 				7A2B423429366B9E00D49576 /* Theo.swift in Sources */,
 				7A2B423229366B9600D49576 /* Toby.swift in Sources */,
 				5FCCD43F29391CB200CD8AF5 /* Bounce.swift in Sources */,
+				7A2B424029367E7000D49576 /* View+.swift in Sources */,
 				7A2B423629366BA400D49576 /* Hardy.swift in Sources */,
 				7A2B423829366D8500D49576 /* WayToCome.swift in Sources */,
 				5FCCD43D29391C9900CD8AF5 /* CelebrationEffect.swift in Sources */,
@@ -327,6 +344,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SBS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SBS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -355,6 +373,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SBS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SBS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
