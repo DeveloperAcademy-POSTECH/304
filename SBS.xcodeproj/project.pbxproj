@@ -195,7 +195,6 @@
 				5FCCD43F29391CB200CD8AF5 /* Bounce.swift in Sources */,
 				7A2B423629366BA400D49576 /* Hardy.swift in Sources */,
 				7A2B423829366D8500D49576 /* WayToCome.swift in Sources */,
-				7A2B423A2936759700D49576 /* Reservation.swift in Sources */,
 				5FCCD43D29391C9900CD8AF5 /* CelebrationEffect.swift in Sources */,
 				5FCCD4292936697A00CD8AF5 /* SBSApp.swift in Sources */,
 			);
