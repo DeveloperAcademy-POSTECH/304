@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var headTitle = "어서오십시요 304 입니다."
-    @State var subTitle = "파인다이닝 레스토랑에 오신걸 환영합니다."
+    @State var subTitle = "파인다이닝 레스토랑 오신걸 환영함돠"
     @State var audioPlayer: AVAudioPlayer?
     
     var body: some View {
@@ -25,31 +25,49 @@ struct ContentView: View {
                 
                 Bounce(headTitle: $headTitle, subTitle: $subTitle)
                 
+                Divider()
+                    .foregroundColor(.black)
+                
                 ScrollView {
                     Text("12월 \(calculateFirst() ? 1 : 5)일 초대되는 귀한 분")
                         .font(.largeTitle)
                     
                     if calculateFirst() {
                         HStack {
-                            Image("daisy")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                            Image("gommin")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
+                            VStack {
+                                Image("daisy")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                Text("Daisy")
+                            }
+                            VStack {
+                                Image("gommin")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                Text("Gommin")
+                            }
                         }
                         .padding()
                     } else {
                         HStack {
-                            Image("young")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                            Image("lingo")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                            Image("vivi")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
+                            VStack {
+                                Image("young")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                Text("Young")
+                            }
+                            VStack {
+                                Image("lingo")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                Text("Lingo")
+                            }
+                            VStack {
+                                Image("vivi")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                Text("Vivi")
+                            }
                         }
                     }
                     
