@@ -54,6 +54,9 @@
 				5FCCD4282936697A00CD8AF5 /* SBSApp.swift */,
 				5FCCD42A2936697A00CD8AF5 /* ContentView.swift */,
 				5FCCD42C2936697B00CD8AF5 /* Assets.xcassets */,
+				7A2B422F29366AF400D49576 /* 인호 */,
+				7A2B422E29366AE900D49576 /* 현상 */,
+				7A2B423029366AFB00D49576 /* 연호 */,
 				5FCCD42E2936697B00CD8AF5 /* Preview Content */,
 			);
 			path = SBS;
@@ -65,6 +68,30 @@
 				5FCCD42F2936697B00CD8AF5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7A2B422E29366AE900D49576 /* 현상 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "현상";
+			path = "현상";
+			sourceTree = "<group>";
+		};
+		7A2B422F29366AF400D49576 /* 인호 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "인호";
+			path = "인호";
+			sourceTree = "<group>";
+		};
+		7A2B423029366AFB00D49576 /* 연호 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "연호";
+			path = "연호";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
