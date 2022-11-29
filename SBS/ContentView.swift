@@ -15,93 +15,100 @@ struct ContentView: View {
     @State var isMuted = false
     
     var body: some View {
-        ZStack {
-            VStack {
-                Spacer()
-                HStack {
+        NavigationStack {
+            ZStack {
+                VStack {
                     Spacer()
-                    Image(systemName: isMuted ? "speaker.slash" : "speaker.wave.3")
-                        .onTapGesture {
-                            if isMuted {
-                                audioPlayer?.volume = 1
-                            } else {
-                                audioPlayer?.volume = 0
-                            }
-                            isMuted.toggle()
+                    HStack {
+                        NavigationLink(destination: WayToCome()) {
+                            Image(systemName: "map")
+                                .foregroundColor(.black)
                         }
-                }
-            }
-            .ignoresSafeArea()
-            
-            CelebrationEffect()
-            
-            VStack {
-                Image("304slogan")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .padding()
-                
-                Bounce(headTitle: $headTitle, subTitle: $subTitle)
-                
-                Divider()
-                    .foregroundColor(.black)
-                
-                ScrollView {
-                    Text("12月 \(calculateFirst() ? 1 : 5)日의 貴賓")
-                        .customFontSetting()
-                    
-                    if calculateFirst() {
-                        HStack {
-                            VStack {
-                                Image("daisy")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                Text("Daisy")
+
+                        Spacer()
+                        Image(systemName: isMuted ? "speaker.slash" : "speaker.wave.3")
+                            .onTapGesture {
+                                if isMuted {
+                                    audioPlayer?.volume = 1
+                                } else {
+                                    audioPlayer?.volume = 0
+                                }
+                                isMuted.toggle()
                             }
-                            VStack {
-                                Image("gommin")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                Text("Gommin")
-                            }
-                        }
-                        .padding()
-                    } else {
-                        HStack {
-                            VStack {
-                                Image("young")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                Text("Young")
-                            }
-                            VStack {
-                                Image("lingo")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                Text("Lingo")
-                            }
-                            VStack {
-                                Image("vivi")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                Text("Vivi")
-                            }
-                        }
                     }
-                    
                 }
-                Text("떠나가는 한 해를 마무리하며..")
-                    .customFontSmall()
-                    .padding(.bottom)
-                Text("좋은 因緣이란 시작이 아닌 끝이 좋은 因緣입니다.\n시작은 나와 상관없더라도 이를 어떻게 마무리하는가는\n나 자신에게 달렸기 때문입니다.")
-                    .customFontSmall()
-                    .multilineTextAlignment(.center)
-                Spacer()
+                .ignoresSafeArea()
+                
+                CelebrationEffect()
+                
+                VStack {
+                    Image("304slogan")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding()
+                    
+                    Bounce(headTitle: $headTitle, subTitle: $subTitle)
+                    
+                    Divider()
+                        .foregroundColor(.black)
+                    
+                    ScrollView {
+                        Text("12月 \(calculateFirst() ? 1 : 5)日의 貴賓")
+                            .customFontSetting()
+                        
+                        if calculateFirst() {
+                            HStack {
+                                VStack {
+                                    Image("daisy")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                    Text("Daisy")
+                                }
+                                VStack {
+                                    Image("gommin")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                    Text("Gommin")
+                                }
+                            }
+                            .padding()
+                        } else {
+                            HStack {
+                                VStack {
+                                    Image("young")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                    Text("Young")
+                                }
+                                VStack {
+                                    Image("lingo")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                    Text("Lingo")
+                                }
+                                VStack {
+                                    Image("vivi")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                    Text("Vivi")
+                                }
+                            }
+                        }
+                        
+                    }
+                    Text("떠나가는 한 해를 마무리하며..")
+                        .customFontSmall()
+                        .padding(.bottom)
+                    Text("좋은 因緣이란 시작이 아닌 끝이 좋은 因緣입니다.\n시작은 나와 상관없더라도 이를 어떻게 마무리하는가는\n나 자신에게 달렸기 때문입니다.")
+                        .customFontSmall()
+                        .multilineTextAlignment(.center)
+                    Spacer()
+                }
             }
-        }
-        .padding()
-        .onAppear {
-            self.playSound(sound: "song", type: "mp3")
+            .padding()
+            .onAppear {
+                self.playSound(sound: "song", type: "mp3")
+            }
         }
     }
     

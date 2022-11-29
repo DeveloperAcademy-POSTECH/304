@@ -9,10 +9,7 @@ import SwiftUI
 
 struct WayToCome: View {
     var body: some View {
-        VStack {
-            guidingText
-            map
-        }
+        map
     }
 }
 

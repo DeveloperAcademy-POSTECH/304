@@ -1,8 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "스크린샷 2022-11-30 오전 1.41.21.png",
-      "idiom" : "universal"
+      "filename" : "wayToCome.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {
