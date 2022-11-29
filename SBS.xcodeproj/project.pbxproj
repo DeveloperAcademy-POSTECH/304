@@ -68,7 +68,6 @@
 			children = (
 				5FCCD4282936697A00CD8AF5 /* SBSApp.swift */,
 				5FCCD42A2936697A00CD8AF5 /* ContentView.swift */,
-				5FCCD43E29391CB200CD8AF5 /* Bounce.swift */,
 				5FCCD42C2936697B00CD8AF5 /* Assets.xcassets */,
 				5FCCD44029391CD100CD8AF5 /* song.mp3 */,
 				7A2B422F29366AF400D49576 /* 인호 */,
@@ -101,6 +100,7 @@
 		7A2B422F29366AF400D49576 /* 인호 */ = {
 			isa = PBXGroup;
 			children = (
+				5FCCD43E29391CB200CD8AF5 /* Bounce.swift */,
 				5FCCD44229391CD100CD8AF5 /* CelebrationEffect.swift */,
 				7A2B423129366B9600D49576 /* Toby.swift */,
 			);
