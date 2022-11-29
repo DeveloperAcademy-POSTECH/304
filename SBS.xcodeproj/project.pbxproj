@@ -11,14 +11,13 @@
 		5FCCD42B2936697A00CD8AF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCCD42A2936697A00CD8AF5 /* ContentView.swift */; };
 		5FCCD42D2936697B00CD8AF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FCCD42C2936697B00CD8AF5 /* Assets.xcassets */; };
 		5FCCD4302936697B00CD8AF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FCCD42F2936697B00CD8AF5 /* Preview Assets.xcassets */; };
-		5FCCD43D29391C9900CD8AF5 /* CelebrationEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCCD43C29391C9900CD8AF5 /* CelebrationEffect.swift */; };
 		5FCCD43F29391CB200CD8AF5 /* Bounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCCD43E29391CB200CD8AF5 /* Bounce.swift */; };
 		5FCCD44129391CD100CD8AF5 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5FCCD44029391CD100CD8AF5 /* song.mp3 */; };
+		5FCCD44329391CD100CD8AF5 /* CelebrationEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCCD44229391CD100CD8AF5 /* CelebrationEffect.swift */; };
 		7A2B423229366B9600D49576 /* Toby.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B423129366B9600D49576 /* Toby.swift */; };
 		7A2B423429366B9E00D49576 /* Theo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B423329366B9E00D49576 /* Theo.swift */; };
 		7A2B423629366BA400D49576 /* Hardy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B423529366BA400D49576 /* Hardy.swift */; };
 		7A2B423829366D8500D49576 /* WayToCome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B423729366D8500D49576 /* WayToCome.swift */; };
-		7A2B423A2936759700D49576 /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B42392936759700D49576 /* Reservation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +26,9 @@
 		5FCCD42A2936697A00CD8AF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5FCCD42C2936697B00CD8AF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FCCD42F2936697B00CD8AF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5FCCD43C29391C9900CD8AF5 /* CelebrationEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebrationEffect.swift; sourceTree = "<group>"; };
 		5FCCD43E29391CB200CD8AF5 /* Bounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bounce.swift; sourceTree = "<group>"; };
 		5FCCD44029391CD100CD8AF5 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
+		5FCCD44229391CD100CD8AF5 /* CelebrationEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CelebrationEffect.swift; sourceTree = "<group>"; };
 		7A2B423129366B9600D49576 /* Toby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toby.swift; sourceTree = "<group>"; };
 		7A2B423329366B9E00D49576 /* Theo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theo.swift; sourceTree = "<group>"; };
 		7A2B423529366BA400D49576 /* Hardy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hardy.swift; sourceTree = "<group>"; };
@@ -70,7 +69,6 @@
 				5FCCD4282936697A00CD8AF5 /* SBSApp.swift */,
 				5FCCD42A2936697A00CD8AF5 /* ContentView.swift */,
 				5FCCD43E29391CB200CD8AF5 /* Bounce.swift */,
-				5FCCD43C29391C9900CD8AF5 /* CelebrationEffect.swift */,
 				5FCCD42C2936697B00CD8AF5 /* Assets.xcassets */,
 				5FCCD44029391CD100CD8AF5 /* song.mp3 */,
 				7A2B422F29366AF400D49576 /* 인호 */,
@@ -103,6 +101,7 @@
 		7A2B422F29366AF400D49576 /* 인호 */ = {
 			isa = PBXGroup;
 			children = (
+				5FCCD44229391CD100CD8AF5 /* CelebrationEffect.swift */,
 				7A2B423129366B9600D49576 /* Toby.swift */,
 			);
 			name = "인호";
@@ -191,11 +190,11 @@
 			files = (
 				5FCCD42B2936697A00CD8AF5 /* ContentView.swift in Sources */,
 				7A2B423429366B9E00D49576 /* Theo.swift in Sources */,
+				5FCCD44329391CD100CD8AF5 /* CelebrationEffect.swift in Sources */,
 				7A2B423229366B9600D49576 /* Toby.swift in Sources */,
 				5FCCD43F29391CB200CD8AF5 /* Bounce.swift in Sources */,
 				7A2B423629366BA400D49576 /* Hardy.swift in Sources */,
 				7A2B423829366D8500D49576 /* WayToCome.swift in Sources */,
-				5FCCD43D29391C9900CD8AF5 /* CelebrationEffect.swift in Sources */,
 				5FCCD4292936697A00CD8AF5 /* SBSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
