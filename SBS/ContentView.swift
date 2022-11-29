@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var headTitle = "어서오십시요 304 입니다."
-    @State var subTitle = "파인다이닝 레스토랑 오신걸 환영함돠"
+    @State var subTitle = "파인다이닝 레스토랑에 오신 것을 환영합니다."
     @State var audioPlayer: AVAudioPlayer?
     @State var isMuted = false
     
@@ -47,8 +47,8 @@ struct ContentView: View {
                     .foregroundColor(.black)
                 
                 ScrollView {
-                    Text("12월 \(calculateFirst() ? 1 : 5)일 초대되는 귀한 분")
-                        .font(.largeTitle)
+                    Text("12月 \(calculateFirst() ? 1 : 5)日의 貴賓")
+                        .customFontSetting()
                     
                     if calculateFirst() {
                         HStack {
@@ -90,6 +90,12 @@ struct ContentView: View {
                     }
                     
                 }
+                Text("떠나가는 한 해를 마무리하며..")
+                    .customFontSmall()
+                    .padding(.bottom)
+                Text("좋은 因緣이란 시작이 아닌 끝이 좋은 因緣입니다.\n시작은 나와 상관없더라도 이를 어떻게 마무리하는가는\n나 자신에게 달렸기 때문입니다.")
+                    .customFontSmall()
+                    .multilineTextAlignment(.center)
                 Spacer()
             }
         }
