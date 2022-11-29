@@ -18,6 +18,7 @@
 		7A2B423429366B9E00D49576 /* Theo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B423329366B9E00D49576 /* Theo.swift */; };
 		7A2B423629366BA400D49576 /* Hardy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B423529366BA400D49576 /* Hardy.swift */; };
 		7A2B423829366D8500D49576 /* WayToCome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B423729366D8500D49576 /* WayToCome.swift */; };
+		7A2B423A2936759700D49576 /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B42392936759700D49576 /* Reservation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		7A2B423329366B9E00D49576 /* Theo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theo.swift; sourceTree = "<group>"; };
 		7A2B423529366BA400D49576 /* Hardy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hardy.swift; sourceTree = "<group>"; };
 		7A2B423729366D8500D49576 /* WayToCome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayToCome.swift; sourceTree = "<group>"; };
+		7A2B42392936759700D49576 /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				7A2B423329366B9E00D49576 /* Theo.swift */,
 				7A2B423729366D8500D49576 /* WayToCome.swift */,
+				7A2B42392936759700D49576 /* Reservation.swift */,
 			);
 			name = "현상";
 			path = "현상";
