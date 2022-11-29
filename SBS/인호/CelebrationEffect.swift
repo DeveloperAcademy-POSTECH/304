@@ -2,7 +2,7 @@
 //  CelebrationEffect.swift
 //  SBS
 //
-//  Created by Inho Choi on 2022/12/02.
+//  Created by Inho Choi on 2022/11/30.
 //
 
 import SwiftUI

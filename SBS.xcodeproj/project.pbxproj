@@ -13,13 +13,12 @@
 		5FCCD4302936697B00CD8AF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FCCD42F2936697B00CD8AF5 /* Preview Assets.xcassets */; };
 		5FCCD43F29391CB200CD8AF5 /* Bounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCCD43E29391CB200CD8AF5 /* Bounce.swift */; };
 		5FCCD44129391CD100CD8AF5 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5FCCD44029391CD100CD8AF5 /* song.mp3 */; };
-		5FCCD44329391CD100CD8AF5 /* CelebrationEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCCD44229391CD100CD8AF5 /* CelebrationEffect.swift */; };
-		7A2B423229366B9600D49576 /* Toby.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B423129366B9600D49576 /* Toby.swift */; };
+		5FF8461629368CF700F28236 /* CelebrationEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF8461529368CF700F28236 /* CelebrationEffect.swift */; };
+		5FF8461829368E1000F28236 /* FadeInOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF8461729368E1000F28236 /* FadeInOutView.swift */; };
 		7A2B423429366B9E00D49576 /* Theo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B423329366B9E00D49576 /* Theo.swift */; };
 		7A2B423629366BA400D49576 /* Hardy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B423529366BA400D49576 /* Hardy.swift */; };
 		7A2B423829366D8500D49576 /* WayToCome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B423729366D8500D49576 /* WayToCome.swift */; };
 		7A2B423D29367DDF00D49576 /* ChosunGs.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 7A2B423C29367DDF00D49576 /* ChosunGs.TTF */; };
-		7A2B424029367E7000D49576 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B423F29367E7000D49576 /* View+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,15 +29,14 @@
 		5FCCD42F2936697B00CD8AF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5FCCD43E29391CB200CD8AF5 /* Bounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bounce.swift; sourceTree = "<group>"; };
 		5FCCD44029391CD100CD8AF5 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
-		5FCCD44229391CD100CD8AF5 /* CelebrationEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CelebrationEffect.swift; sourceTree = "<group>"; };
-		7A2B423129366B9600D49576 /* Toby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toby.swift; sourceTree = "<group>"; };
+		5FF8461529368CF700F28236 /* CelebrationEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebrationEffect.swift; sourceTree = "<group>"; };
+		5FF8461729368E1000F28236 /* FadeInOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeInOutView.swift; sourceTree = "<group>"; };
 		7A2B423329366B9E00D49576 /* Theo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theo.swift; sourceTree = "<group>"; };
 		7A2B423529366BA400D49576 /* Hardy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hardy.swift; sourceTree = "<group>"; };
 		7A2B423729366D8500D49576 /* WayToCome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayToCome.swift; sourceTree = "<group>"; };
 		7A2B42392936759700D49576 /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
 		7A2B423C29367DDF00D49576 /* ChosunGs.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = ChosunGs.TTF; sourceTree = "<group>"; };
 		7A2B423E29367DFA00D49576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		7A2B423F29367E7000D49576 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +97,6 @@
 				7A2B423329366B9E00D49576 /* Theo.swift */,
 				7A2B423729366D8500D49576 /* WayToCome.swift */,
 				7A2B42392936759700D49576 /* Reservation.swift */,
-				7A2B423F29367E7000D49576 /* View+.swift */,
 			);
 			name = "현상";
 			path = "현상";
@@ -109,8 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				5FCCD43E29391CB200CD8AF5 /* Bounce.swift */,
-				5FCCD44229391CD100CD8AF5 /* CelebrationEffect.swift */,
-				7A2B423129366B9600D49576 /* Toby.swift */,
+				5FF8461729368E1000F28236 /* FadeInOutView.swift */,
+				5FF8461529368CF700F28236 /* CelebrationEffect.swift */,
 			);
 			name = "인호";
 			path = "인호";
@@ -206,13 +203,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FCCD42B2936697A00CD8AF5 /* ContentView.swift in Sources */,
+				5FF8461829368E1000F28236 /* FadeInOutView.swift in Sources */,
 				7A2B423429366B9E00D49576 /* Theo.swift in Sources */,
-				5FCCD44329391CD100CD8AF5 /* CelebrationEffect.swift in Sources */,
-				7A2B423229366B9600D49576 /* Toby.swift in Sources */,
 				5FCCD43F29391CB200CD8AF5 /* Bounce.swift in Sources */,
-				7A2B424029367E7000D49576 /* View+.swift in Sources */,
 				7A2B423629366BA400D49576 /* Hardy.swift in Sources */,
 				7A2B423829366D8500D49576 /* WayToCome.swift in Sources */,
+				5FF8461629368CF700F28236 /* CelebrationEffect.swift in Sources */,
 				5FCCD4292936697A00CD8AF5 /* SBSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,14 +338,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SBS/Preview Content\"";
+				DEVELOPMENT_TEAM = P2UJWPTGRX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SBS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "삼백사";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -357,9 +357,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = developer.toby.SBS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -371,14 +374,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SBS/Preview Content\"";
+				DEVELOPMENT_TEAM = P2UJWPTGRX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SBS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "삼백사";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -386,9 +393,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = developer.toby.SBS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
