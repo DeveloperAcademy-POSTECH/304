@@ -25,6 +25,7 @@ struct BounceAnimationView: View {
     @State var offsetYForBounce: CGFloat = -50
     @State var opacity: CGFloat = 0
     @State var baseTime: Double
+    @State var isgo = true
     
     init(text: String, startTime: Double){
         self.characters = Array(text)
@@ -81,20 +82,20 @@ struct BounceAnimationSmallView: View {
                     .opacity(opacity)
                     .animation(.spring(response: 0.2, dampingFraction: 0.5, blendDuration: 0.1).delay( Double(num) * 0.1 ), value: offsetYForBounce)
             }
-            .onTapGesture {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.0) {
-                    opacity = 0
-                    offsetYForBounce = -50
-                }
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
-                    opacity = 1
-                    offsetYForBounce = 0
-                }
-            }
             .onAppear{
                 DispatchQueue.main.asyncAfter(deadline: .now() + (0.8 + baseTime)) {
                     opacity = 1
                     offsetYForBounce = 0
+                    Timer.scheduledTimer(withTimeInterval: 3.5, repeats: true) { timer in
+                        if isgo {
+                            opacity = 1
+                            offsetYForBounce = 0
+                        } else {
+                            opacity = 0
+                            offsetYForBounce = -50
+                        }
+                        isgo.toggle()
+                    }
                 }
             }
         }

@@ -12,9 +12,27 @@ struct ContentView: View {
     @State var headTitle = "어서오십시요 304 입니다."
     @State var subTitle = "파인다이닝 레스토랑에 오신 것을 환영합니다."
     @State var audioPlayer: AVAudioPlayer?
+    @State var isMuted = false
     
     var body: some View {
         ZStack {
+            VStack {
+                Spacer()
+                HStack {
+                    Spacer()
+                    Image(systemName: isMuted ? "speaker.slash" : "speaker.wave.3")
+                        .onTapGesture {
+                            if isMuted {
+                                audioPlayer?.volume = 1
+                            } else {
+                                audioPlayer?.volume = 0
+                            }
+                            isMuted.toggle()
+                        }
+                }
+            }
+            .ignoresSafeArea()
+            
             CelebrationEffect()
             
             VStack {
@@ -25,31 +43,49 @@ struct ContentView: View {
                 
                 Bounce(headTitle: $headTitle, subTitle: $subTitle)
                 
+                Divider()
+                    .foregroundColor(.black)
+                
                 ScrollView {
                     Text("12月 \(calculateFirst() ? 1 : 5)日의 貴賓")
                         .customFontSetting()
                     
                     if calculateFirst() {
                         HStack {
-                            Image("daisy")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                            Image("gommin")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
+                            VStack {
+                                Image("daisy")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                Text("Daisy")
+                            }
+                            VStack {
+                                Image("gommin")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                Text("Gommin")
+                            }
                         }
                         .padding()
                     } else {
                         HStack {
-                            Image("young")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                            Image("lingo")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                            Image("vivi")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
+                            VStack {
+                                Image("young")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                Text("Young")
+                            }
+                            VStack {
+                                Image("lingo")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                Text("Lingo")
+                            }
+                            VStack {
+                                Image("vivi")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                Text("Vivi")
+                            }
                         }
                     }
                     
