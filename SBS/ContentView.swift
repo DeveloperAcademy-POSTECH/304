@@ -44,18 +44,14 @@ struct ContentView: View {
                     Divider()
                         .foregroundColor(.black)
                     
-                    ScrollView {
-                        Text("12月 \(isFirst ? 1 : 5)日의 貴賓")
-                            .font(.choSunGsTitle)
+                    Text("12月 \(isFirst ? 1 : 5)日의 貴賓")
+                        .font(.choSunGsTitle)
+                    
+                    emoji
+                        .padding(.bottom, 32)
+                    
+                    quote
                         
-                        emoji
-                        
-                        quote
-                        
-                        
-                        // TODO: 연호야 일어나서 여기다가 메뉴판 만들어다오.
-                        // 참고사항 서드파티 많이 넣어놔서 에러 검출이 힘들다. 하나 만들고 빌드 하나 만들고 빌드 이런 형식으로 해야함
-                    }
                     
                     Spacer()
                     
@@ -129,14 +125,34 @@ struct ContentView: View {
     var buttons: some View {
         VStack {
             Spacer()
-            HStack {
-                NavigationLink(destination: WayToCome()) {
-                    Image(systemName: "map")
-                        .foregroundColor(.black)
+            ZStack {
+                HStack {
+                    NavigationLink(destination: WayToCome(isFirst: isFirst)) {
+                        VStack(alignment: .leading) {
+                            Text("오시는 길")
+                                .foregroundColor(.black)
+                            Image(systemName: "map")
+                                .foregroundColor(.black)
+                        }
+                    }
+                    Spacer()
                 }
-
-                Spacer()
-                Image(systemName: isMuted ? "speaker.slash" : "speaker.wave.3")
+                
+                NavigationLink(destination: MenuView()) {
+                    VStack(alignment: .center) {
+                        Text("차림상")
+                            .foregroundColor(.black)
+                        Image(systemName: "book")
+                            .foregroundColor(.black)
+                    }
+                }
+                
+                HStack {
+                    Spacer()
+                    VStack(alignment: .trailing) {
+                        Text("소리")
+                        Image(systemName: isMuted ? "speaker.slash" : "speaker.wave.3")
+                    }
                     .onTapGesture {
                         if isMuted {
                             audioPlayer?.volume = 1
@@ -145,6 +161,7 @@ struct ContentView: View {
                         }
                         isMuted.toggle()
                     }
+                }
             }
         }
     }
@@ -162,6 +179,10 @@ struct ContentView: View {
             
             FadeInOutView(text: "나 자신에게 달렸기 때문입니다.", startTime: 8)
                 .padding(.bottom, 4)
+            
+    
+            FadeInOutView(text: "오시는 시간 오후 \(isFirst ? "6시 반" : "6시")", startTime: 11)
+                .padding(.top, 40)
         }
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F3774552937801900F51FAE /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3774542937801900F51FAE /* MenuView.swift */; };
 		5FCCD4292936697A00CD8AF5 /* SBSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCCD4282936697A00CD8AF5 /* SBSApp.swift */; };
 		5FCCD42B2936697A00CD8AF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCCD42A2936697A00CD8AF5 /* ContentView.swift */; };
 		5FCCD42D2936697B00CD8AF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FCCD42C2936697B00CD8AF5 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F3774542937801900F51FAE /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		5FCCD4252936697A00CD8AF5 /* SBS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FCCD4282936697A00CD8AF5 /* SBSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSApp.swift; sourceTree = "<group>"; };
 		5FCCD42A2936697A00CD8AF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			children = (
 				5FCCD43E29391CB200CD8AF5 /* Bounce.swift */,
 				5FF8461729368E1000F28236 /* FadeInOutView.swift */,
+				5F3774542937801900F51FAE /* MenuView.swift */,
 				5FF8461529368CF700F28236 /* CelebrationEffect.swift */,
 			);
 			name = "인호";
@@ -206,6 +209,7 @@
 				5FF8461829368E1000F28236 /* FadeInOutView.swift in Sources */,
 				7A2B423429366B9E00D49576 /* Theo.swift in Sources */,
 				5FCCD43F29391CB200CD8AF5 /* Bounce.swift in Sources */,
+				5F3774552937801900F51FAE /* MenuView.swift in Sources */,
 				7A2B423629366BA400D49576 /* Hardy.swift in Sources */,
 				7A2B423829366D8500D49576 /* WayToCome.swift in Sources */,
 				5FF8461629368CF700F28236 /* CelebrationEffect.swift in Sources */,
